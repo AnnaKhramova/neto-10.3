@@ -1,6 +1,8 @@
-drop table netology.orders;
+create schema if not exists netology;
 
-drop table netology.customers;
+drop table if exists netology.orders;
+
+drop table if exists netology.customers;
 
 create table if not exists netology.customers
 (
